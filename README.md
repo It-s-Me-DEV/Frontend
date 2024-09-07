@@ -1,3 +1,5 @@
+![afagfa](https://github.com/user-attachments/assets/d51a8282-72e3-4eee-b793-3819bde93942)
+
 # Frontend
 
 <오프라인 스터디>
