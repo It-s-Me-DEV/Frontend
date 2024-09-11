@@ -17,3 +17,24 @@ HTML은 기본적으로 다양한 tag들로 이루어져 있습니다.
   - \<head>
 
   - \<body>
+
+  - \<div> , \<nav>
+
+  - \<main> , \<section>
+
+  - \<a>
+
+  - \<ul>, \<li>
+
+<b>Class</b>
+
+### VSCode 작성 미세팁
+
+이미 다들 아실 거라고 생각하지만 분량 이슈로 적어봅니다. \
+![image](https://github.com/user-attachments/assets/f1e1ee65-3567-494e-ba0e-f425c8854de1)
+불편한 띄어쓰기, 들여쓰기.. 그리고 깔끔하지 않은 배치를 어떻게 정리할까요?\
+VSCode Prettier Extention 설치 후\
+![image](https://github.com/user-attachments/assets/39e275df-cfa5-4ca5-8daf-a0204dcb2e4a) \
+Ctrl + Shift + P 누르고 Format Document를 해주면?\
+![image](https://github.com/user-attachments/assets/3b7fa10c-7280-4fe3-ad65-3200e8e04ace) \
+깔끔하게 정리해줍니다.
