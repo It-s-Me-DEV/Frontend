@@ -165,6 +165,8 @@ div {
 div { visibility: hidden; }
 ```
 
+***
+
 # Section 03 미디어 쿼리(Media Query)
 
 ## (1) 미디어 쿼리의 개요
