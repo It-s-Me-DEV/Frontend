@@ -26,6 +26,7 @@ CSS는 캐스캐이딩 스타일시트(Cascading Style Sheets)의 약자로 HTML
 
 ## 2. CSS 주요 속성
 ### 2-1. Box Model 지정
+![image](https://github.com/user-attachments/assets/96b7eb95-fd03-4364-8463-68d0b538f8e2)
 
 각각의 박스(Element)들은 Margin > Border > Padding > Content 순으로 둘러싸여 있습니다.\
 기본적으로 내용을 담고 있는 부분인 Content를 제외한 나머지 부분들에 대하여 알아봅니다.
@@ -34,7 +35,7 @@ CSS는 캐스캐이딩 스타일시트(Cascading Style Sheets)의 약자로 HTML
 
     CSS에서 margin은 박스 밖의 공간을 나타냅니다. 위, 오른쪽, 아래쪽, 왼쪽 (시계 방향) 4방향의 속성을 가집니다. margin은 기본적으로 0의 값을 가지고 있습니다.
 
-    table—caption, table , inline—table 등의 테이블 관련 태그들을 제외한 모든 태그에 적용이 가능합니다.
+    table-caption, table , inline-table 등의 테이블 관련 태그들을 제외한 모든 태그에 적용이 가능합니다.
 
     ```
     p{
@@ -42,7 +43,8 @@ CSS는 캐스캐이딩 스타일시트(Cascading Style Sheets)의 약자로 HTML
         margin-left: 20px;
     }
     ```
-    위 코드는 어떤 박스에 대하여 위에 10px만큼, 왼쪽에 20px만큼의 border을 갖게 합니다.
+    위 코드는 어떤 박스에 대하여 위에 10px만큼, 왼쪽에 20px만큼의 border을 갖게 합니다.\
+![image](https://github.com/user-attachments/assets/3a88b5f2-9ed6-43ba-9714-8729e6a14b46)
 
     ```
     p{
@@ -123,7 +125,10 @@ CSS는 캐스캐이딩 스타일시트(Cascading Style Sheets)의 약자로 HTML
     padding: - - - -;
     ``` 
     이런 식으로 작성하면 되겠습니다.
+  
+    padding이 추가가 되어도 엘리먼트의 총 크기가 커지는 걸 막고 싶다면, box-sizing: border-box; 속성을 적용할 수 있습니다.
 
+  
 ### 2-2. 위치 지정
 
 HTML 문서를 처음으로 작성할 때, 모든 엘리먼트가 기본적으로 왼쪽 맞춤되어 보기 싫은 상황이 있을 것입니다. 이럴 때 이런저런 배치를 하는 방법을 공부해보겠습니다.
@@ -185,6 +190,7 @@ HTML 문서를 처음으로 작성할 때, 모든 엘리먼트가 기본적으�
     이런 식으로 visibility를 hidden으로 설정하게 되면 div가 보이지 않게 됩니다.\
     보이게 하려면 visibility: visible; 을 사용합니다.
 
+
 - display: none
 
     ```
@@ -193,8 +199,9 @@ HTML 문서를 처음으로 작성할 때, 모든 엘리먼트가 기본적으�
     }
     ```
     visibility: hidden; 은 엘리먼트를 보이지 않게 해주지만 엘리먼트가 있는 영역은 그대로 표시가 됩니다.
-
+![image](https://github.com/user-attachments/assets/9f58e168-84ab-4175-a6c0-c82266f4e420)
     이 영역까지 숨기고 싶다면 display: none; 을 고려할 수 있습니다.
+![image](https://github.com/user-attachments/assets/32c26dbc-48c2-4678-96df-fa2518c3d5ac)
 
 ### 2-4. Font 지정
 
