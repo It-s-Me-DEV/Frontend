@@ -18,6 +18,7 @@ CSS는 캐스캐이딩 스타일시트(Cascading Style Sheets)의 약자로 HTML
 
 
 이런 식으로 생기를 불어넣어줍니다. ↓
+![image](https://github.com/user-attachments/assets/7719cb5b-3d1a-4d32-acc0-b77510c9a428)
 
 또한 PC, 휴대폰, 태블릿 등 다양한 기기와 그에 따른 다양한 디스플레이에 맞춰 화면을 표시하기 위하여 웹 페이지의 스타일을 정의하는 데에 사용합니다.
 
