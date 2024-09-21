@@ -1,0 +1,171 @@
+# CSS
+
+# CSS 개요 및 CSS 기본 사용법
+
+## CSS 개요
+
+- CSS : HTML 태그를 화면상에 어떻게 표현할지 설정 → **디자인**
+- CSS의 미디어쿼리를 사용하여 화면 크기에 자동으로 반응하는 사이트(반응형 웹)
+- CSS 단일 체계에서 서식을 통합적으로 관리
+- 체계적인 웹 사이트 개발과 이에 따른 개발 비용 감소
+
+## CSS 기본 사용법
+
+### CSS의 작성 위치
+
+1. 스타일시트를 태그의 style 속성에 기술 → 인라인 스타일시트
+    1. 가장 간단
+    2. 스타일이 지정된 태그에서만 적용됨 → 같은 스타일을 줄 경우 style 속성에 값을 각각 지정해야 함…
+    
+    ```html
+    <p style="color : blue::>연습</p>
+    ```
+    
+2. 스타일시트를 HTML 문서 내에 포함해서 작성 → 내부 스타일시트
+    1. 스타일을 지정하는 <style> 태그는 일반적으로 <head> 태그 안에
+    2. 간단하지만, 다른 문서에서 재사용X → 여러 파일에 동일한 스타일을 적용할 경우 비효율적
+    
+    ```html
+    <style>
+    	div{
+    			width : 300px;
+    			height : 50px;
+    			background-color : #ddefff;
+    	}
+    </style>
+    ```
+    
+3. 스타일시트를 별도의 css 파일로 작성 → 외부 스타일시트
+    1. 스타일시트를 여러 웹 페이지에서 재사용할 목적으로 별도의 파일로 저장
+    2. 웹 애플리케이션 전체에 적용할 공통의 스타일시트를 작성할 때 주로 사용
+    3. 확장자 .css
+    
+    ```css
+    @charset "UTF-8";
+    
+    body {/*body태그에 적용*/
+    	background-color : #CAE2F7;
+    }
+    
+    p {/*p태그에 적용*/
+    	font-size : 16px;
+    }
+    ```
+    
+    d. html 문서에서 <link> 태그에 rel 속성에 “stylesheet”를 값으로 지정하고, href 속성에 스타일시트 파일명(.css)을 값으로 지정
+    
+    ```html
+    <link rel="stylesheet" href="style.css"
+    ```
+    
+
+### CSS의 작성 규칙
+
+- CSS 기본 규칙
+    - 스타일시트를 구성하는 규칙 집합 → selector 실렉터와 선언 블록 {} 으로 구성
+        - 실렉터에는 태그명, id 속성 값, class 속성 값이 올 수 O
+        - 선언 블록 {} 안에 선언 기술
+            - 속성과 값의 쌍으로
+            - 속성과 값은 : 으로 구분
+            - 0개 이상의 선언 나열할 수O →선언과 선언 사이는 ;
+        - 두 개 이상의 실렉터에 같은 선언을 기술할 경우, 실렉터를 , 으로 나열
+        - /**/은 CSS 주석
+        - CSS 키워드는 “” ‘’ 사용 X
+- 실렉터의 종류
+    - 타입 실렉터
+        - HTML 태그명
+        - 특정 태그에 같은 스타일을 지정할 때
+        
+        ```css
+        h1{
+        	color: green;
+        	font-size: 20px;
+        }
+        ```
+        
+    - 유니버셜 실렉터
+        - 속성 실렉터
+            - 태그에 지정한 속성명이 있는 경우에만 스타일 지정
+            - ex) 아래 코드는 HTML에서 <p id=””>와 같은 형태의 <p> 태그에만 스타일이 적용됨
+            
+            ```css
+            p[id]{
+            	color:blue;
+            }
+            ```
+            
+        - ID 실렉터
+            - 태그의 id 속성의 값
+            - 1개의 태그에만 스타일을 지정할 때
+            - ex) 아래 코드는 <div> 태그의 id 속성의 값이 display인 경우 <div id=”display>
+            
+            ```css
+            div#display{
+            	color:red;
+            }
+            ```
+            
+        - class 실렉터
+            - 여러 태그에 같은 스타일을 적용할 때
+            - ex) 태그의 class 속성 값이 area인 경우 <p class=”area”>
+            
+            ```css
+            .area{
+            	color:blue;
+            }
+            ```
+            
+    - 의사 엘리먼트 - 태그명 : hover
+        - 해당 태그에서 마우스 포인터가 위치하는 경우 적용되는 스타일
+        
+        ```html
+        <link rel="stylesheet" href="css/main.css">
+        <div></div>
+        ```
+        
+        ```css
+        div{
+        	width: 200px;
+        	height: 100px;
+        	backgronud-color: blue;
+        }
+        div:hover{/*<div> 태그에 마우스 포인터가 들어오면*/
+        	/*box-shadow: 영역에 그림자 지정*/
+        	box-shadow: 10px 10px 5px #888888;
+        }
+        ```
+        
+    - 조건 실렉터 - 태그명[조건]
+        - 특정 태그 중 조건을 만족하는 태그에만
+        - ex) <p> 태그 중 id 속성이 있는 태그의 글자색을 파랑색으로
+        
+        ```css
+        p[id]{
+        	color: blue;
+        }
+        ```
+        
+
+# CSS의 주요 속성과 값
+
+- 색상과 배경
+- 폰트
+- 텍스트
+- 테이블
+- 테두리
+- 박스 모델
+- 가시성과 위치 지정
+
+![image.png](image.png)
+
+![image.png](image%201.png)
+
+![image.png](image%202.png)
+
+![image.png](image%203.png)
+
+![image.png](image%204.png)
+
+![image.png](image%205.png)
+
+![image.png](image%206.png)
