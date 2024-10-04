@@ -16,18 +16,21 @@ JavaScript는 웹 상에서 브라우저가 웹 페이지를 제어하고 동적
 원래 웹 브라우저에서만 쓰기 위해 개발되었으나, Node.js의 발명으로 웹 브라우저 외부에서 서버 사이드 개발도 가능해졌고 여러 가지 프로그램을 제작하는 데에 무궁무진한 활용을 할 수 있게 되었습니다.
 
 ![js_thanks](https://github.com/user-attachments/assets/9a939748-23b6-4af6-a5ed-ee7e5d67919d)
+
 그러나 이 언어 자체가 필요에 의해 굉장히 급조된 성격을 지녀서 위의 짤처럼 이해할 수 없는 문법, 보안 문제 등이 화두가 되기도 합니다.\
 개발자들 사이에서 농담 반 진담 반으로 최악의 언어라는 별명을 붙이기도 합니다.
 
 이러한 단점들로 인해 현재는 JavaScript의 단점을 보완한 TypeScript를 사용하는 경향이 있습니다.
 
-https://aierse.tistory.com/16\
+https://aierse.tistory.com/16
+
 TypeScript 또한 사장될 거라는 재미있는 의견도 발견해서 들고 와봤습니다.
 ## 2. JavaScript 사용법
 JavaScript(이하 JS)는 HTML 문서 내에서 직접적으로 <b>\<script></b> 태그를 사용하여 작성하거나 따로 .js 파일을 작성 후 HTML 파일에서 호출하는 방식으로 쓸 수 있습니다.
 
 ### 2-1. JavaScript 기초 문법
-https://ko.javascript.info/javascript-specials\
+https://ko.javascript.info/javascript-specials
+
 JS 문법은 자료형이 지정하지 않는다는 것을 제외하면 C언어와 유사합니다.
 
 ### 2-2. ES6 문법
