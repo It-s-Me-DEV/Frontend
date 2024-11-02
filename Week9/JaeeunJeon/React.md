@@ -12,8 +12,8 @@ JavaScript 코드 안에 HTML과 비슷한 코드를 작성할 수 있게 하여
 - 컴포넌트 작성: JSX를 사용하면 컴포넌트를 정의하기가 쉬워지고, 모듈화와 재사용이 용이하다.
 
 #### JSX 문법 규칙
-1. 단일 부모 요소: 각 JSX 표현식은 반드시 하나의 부모 요소를 가져야 한다 (필요 시 <div>로 감싸야 함).
-2. Self-Closing 태그: 자식 요소가 없는 태그는 self-closing 형식으로 닫아야 한다 (<img />).
+1. 단일 부모 요소: 각 JSX 표현식은 반드시 하나의 부모 요소를 가져야 한다 (필요 시 `<div>`로 감싸야 함).
+2. Self-Closing 태그: 자식 요소가 없는 태그는 self-closing 형식으로 닫아야 한다 (`<img />`).
 3. 자바스크립트 표현식: {}를 사용하여 JSX 내에서 자바스크립트 표현식을 사용할 수 있다 (예: {변수명}).
 4. className 사용: JavaScript의 예약어인 class 대신 className을 사용해야 한다.
 
@@ -74,7 +74,7 @@ const Layout = (props) => {
   );
 };
 ```
-위 예제에서 <Header />와 <Footer /> 컴포넌트는 <Layout />에 Props로 전달된다.
+위 예제에서 `<Header />`와 `<Footer />` 컴포넌트는 `<Layout />`에 Props로 전달된다.
 
 ### 3. 이벤트 처리
 
