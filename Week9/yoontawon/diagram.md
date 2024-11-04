@@ -28,21 +28,23 @@ erDiagram
         string phone_number
     }
 
-    OWNER ||--o{ MANAGER : "employs"
-    MANAGER ||--o{ COMPUTER : "manages"
-    CUSTOMER ||--|| COMPUTER : "uses"
-    CUSTOMER ||--o{ MANAGER : "places_order_with"
+    %% 약한 엔티티 표시 (Manager는 Owner에 종속됨)
+    OWNER ||--o{ MANAGER : "employs (1:N)"
+    MANAGER ||--o{ COMPUTER : "manages (1:N)"
+    CUSTOMER ||--|| COMPUTER : "uses (1:1)"
+    CUSTOMER ||--o{ MANAGER : "places_order_with (1:N)"
 
-    Employment {
+    %% 관계 속성들
+    EMPLOYMENT {
         int working_hours
         int hourly_wage
     }
-
-    Management {
+    
+    MANAGEMENT {
         string management_zone
     }
 
-    Order {
+    ORDER {
         int price
         string items
     }
