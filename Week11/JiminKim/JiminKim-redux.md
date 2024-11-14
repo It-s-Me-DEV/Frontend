@@ -1,4 +1,4 @@
-# React & TypeScript
+# React & More
 
 ## 목차
 - [1. contextAPI & Redux](#1-contextapi--redux)
@@ -8,7 +8,8 @@
 - [3. React Routing](#3-react-routing)
 
 ## 1. contextAPI & Redux
-contextAPI나 Redux나, React 환경에서 골칫거리인 Prop Drilling 문제를 해결하기 위해 사용되는 기능입니다. 둘 다 Provider 문법을 사용하여야 한다는 점이 같지만 차이점을 조금 살펴보자면,
+contextAPI나 Redux나, React 환경에서 골칫거리인 Prop Drilling 문제를 해결하기 위해 사용되는 기능입니다.\
+둘 다 사용하는 이유가 비슷하고 Provider 문법을 사용하나 차이점을 조금 살펴보자면,
 
 ![image](https://github.com/user-attachments/assets/e0c37de4-0a6d-48d8-bd41-b7b55ade415e)
 
