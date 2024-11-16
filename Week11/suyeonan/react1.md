@@ -74,7 +74,6 @@ Header.defaultProps = {
 #### (1) 개념
 ##### - 자바스크립트와 html 태그를 섞어 사용하는 문법
 ```js
-//header.js 밑에 내용 추가
 function Header() {
     const number1 = 1;
     const number2 = 2;
