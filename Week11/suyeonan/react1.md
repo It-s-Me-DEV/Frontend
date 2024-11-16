@@ -48,6 +48,114 @@ function App() {
 }
 ```
 ```js
+//header.js
+function Header({num1, num2}) {
+
+    return(
+        <header>
+            <div className="header">
+		       {num1}+{num2}={num1+num2}
+            </div>
+        </header>
+    );
+}
+```
+
+- ##### 주의 ) - App 컴포넌트에서 props의 값( 예: num2 )을 전달하지 않으면 오류가 발생 -> defaultProps 이용
+
+```js
+//header.js 밑에 내용 추가
+Header.defaultProps = {
+    num2: 0, 
+};
+```
+---
+### 2. jsx
+#### (1) 개념
+##### - 자바스크립트와 html 태그를 섞어 사용하는 문법
+```js
+//header.js 밑에 내용 추가
+function Header() {
+    const number1 = 1;
+    const number2 = 2;
+    return(
+        <header>
+            <h1>hello</h1>
+            <h2>{number1 + number2}</h2>
+        </header>
+    );
+}
+
+export default Header;
+```
+#### (2) 규칙
+##### - 최상위 태그 규칙: 최상위 태그로 감싸지 않으면 오류가 발생함
+```js
+// 오류 발생
+function Header() {
+    return (
+        <div>div 1</div>
+	    <div>div 2</div> 
+    );
+}
+```
+```js
+// - 오류 해결1: <React.Fragment> 사용
+function Header() {
+    return (
+      <React.Fragment>
+        <div>div 1</div>
+     	<div>div 2</div> 
+      </React.Fragment>
+    );
+}
+```
+```js
+// - 오류 해결2: 빈태그 사용
+function Header() {
+    return (
+      <>
+        <div>div 1</div>
+	    <div>div 2</div> 
+      </>
+    );
+}
+```
+---
+### 3. useState 함수
+#### (1) 개념
+##### - 사용자 입력 관리 가능함 ex. 입력 폼, 옵션 선택
+```js
+//문법
+const [light, setLight] = useState(“”);
+// light는 현재 상태 변수, setLight는 상태 업데이트 함수, useState의 인수가 light의 초기값
+```
+#### (2) input 태그로 텍스트 입력
+
+
+![image](https://github.com/user-attachments/assets/bc80710f-323c-48b3-93f1-4028121df869)
+```js
+import { useState } from "react"; //리액트 라이브러리에서 불러옴
+
+function Body(){
+    const [text, setText] = useState("") 
+    const handleOnChange = (e) => {
+        setText(e.target.value); // setText 함수를 통해 text에 이벤트가 발생한 요소의 현재 값이 저장
+    };
+    return(
+        <div>
+            <input value={text} onChange={handleOnChange} /> //텍스트입력시 onChange 이벤트가 발생, handleOnChange 함수 호출
+            <div>{text}</div> // text값 출력
+        </div>
+    );
+}
+
+export default Body;
+```
+
+
+
+
 
 
 
