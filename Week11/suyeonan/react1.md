@@ -61,7 +61,7 @@ function Header({num1, num2}) {
 }
 ```
 
-- ##### - 주의 )  App 컴포넌트에서 props의 값( 예: num2 )을 전달하지 않으면 오류가 발생 -> defaultProps 이용
+##### - 주의 )  App 컴포넌트에서 props의 값( 예: num2 )을 전달하지 않으면 오류가 발생 -> defaultProps 이용
 
 ```js
 //header.js 밑에 내용 추가
