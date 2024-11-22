@@ -16,7 +16,7 @@ npx create-react-app my-app --template typescript
 
 tsc --init
 ```
-CRA로 리액트 앱을 만들 때 TypeScript를 사용하겠다고 명시해주거나 이미 만든 프로젝트에서 initialize 해주고 `tsconfig.json` 파일이 생깁니다.
+CRA로 리액트 앱을 만들 때 TypeScript를 사용하겠다고 명시해주거나 이미 만든 프로젝트에서 initialize 해주면 `tsconfig.json` 파일이 생깁니다.
 
 ### Type
 타입스크립트에서 타입 지정은 정말 중요한데요, 사용법은 이렇습니다.
