@@ -43,7 +43,7 @@ const increment = useCallback(() => {
 ---
 ### 4. Lazy Loading
 ##### - 필요한 리소스(예: 이미지, 컴포넌트, 데이터 등)를 즉시 로드하지 않고, 사용자가 해당 리소스에 접근할 때 로드하는 기술
-##### - 초기 로딩 시간, 네트워크 사용량 감소
+##### - 장점: 초기 로딩 시간, 네트워크 사용량 감소
 ```js
 // 리액트에서 활용
 const LazyComponent = React.lazy(() => import('./LazyComponent')); // React.lazy: import()를 활용해 컴포넌트를 동적으로 로드
@@ -52,10 +52,11 @@ function App() {
   return (
     <React.Suspense fallback={<div>Loading...</div>}>
       <LazyComponent />
-    </React.Suspense> // Suspense: 로드 중 로딩 상태를 보여줄 UI를 정의
+    </React.Suspense> // Suspense: LazyComponent가 로드되기 전까지 fallback에 지정된 UI가 렌더링됨, 로딩중일 때 나타나는 UI
   );
 }
 ```
+
 
 
 
