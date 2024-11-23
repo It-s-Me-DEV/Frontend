@@ -1,5 +1,5 @@
 
-# **Next.js + TypeScript + Tailwind CSS OT 자료**
+# **Next.js + TypeScript + Tailwind CSS  자료**
 
 ---
 
