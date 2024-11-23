@@ -382,7 +382,7 @@ styles/
 
 ---
 
-### **9폴더 구조 요약**
+### **9.폴더 구조 요약**
 1. **pages/**: 라우팅과 SSR/SSG/API Routes 관리.
 2. **components/**: UI와 레이아웃 컴포넌트 관리.
 3. **styles/**: CSS 파일 관리.
