@@ -260,7 +260,7 @@ export default function Home() {
 
 ---
 
-#### **4)폴더 구조**
+### **4.폴더 구조**
 
 
 ```bash
@@ -302,7 +302,7 @@ my-next-app/
 
 ---
 
-#### **5. pages/** 폴더 구조
+### **5. pages/** 폴더 구조
 
 `pages/` 폴더는 Next.js의 가장 중요한 폴더로, 모든 페이지와 API 라우트가 여기서 정의됩니다.
 
@@ -330,7 +330,7 @@ pages/
 
 ---
 
-#### **6. components/** 폴더 구조
+### **6. components/** 폴더 구조
 
 ```bash
 components/
@@ -357,7 +357,7 @@ components/
 
 ---
 
-#### **7. styles/** 폴더 구조
+### **7. styles/** 폴더 구조
 
 ```bash
 styles/
@@ -374,7 +374,7 @@ styles/
 
 ---
 
-#### **8. 기타 폴더**
+### **8. 기타 폴더**
 - **utils/**: 공통으로 사용하는 유틸리티 함수 저장.
 - **hooks/**: 커스텀 React 훅 저장.
 - **context/**: 전역 상태 관리를 위한 Context API 파일 저장.
