@@ -1,10 +1,37 @@
+```markdown
+# **Next.js + TypeScript + Tailwind CSS Guide**
 
-# **Next.js + TypeScript + Tailwind CSS  자료**
+---
+
+## **목차**
+1. [Next.js란?](#1-nextjs란)
+2. [Next.js + TypeScript + Tailwind CSS 사용 이유](#2-nextjs--typescript--tailwind-css-사용-이유)
+    - [1. Next.js의 주요 장점](#1-nextjs의-주요-장점)
+    - [2. TypeScript 사용 이유](#2-typescript-사용-이유)
+    - [3. Tailwind CSS 사용 이유](#3-tailwind-css-사용-이유)
+3. [Next.js 설치 및 폴더 구조](#3-nextjs-설치-및-폴더-구조)
+    - [1. Next.js + TypeScript + Tailwind 설치](#1-nextjs--typescript--tailwind-설치)
+    - [2. Next.js 폴더 구조](#2-nextjs-폴더-구조)
+4. [Next.js + TypeScript 주요 기능](#4-nextjs--typescript-주요-기능)
+    - [1. 파일 기반 라우팅](#1-파일-기반-라우팅)
+    - [2. 동적 라우팅](#2-동적-라우팅)
+    - [3. 데이터 페칭 (SSG, SSR, ISR)](#3-데이터-페칭-ssg-ssr-isr)
+    - [4. API Routes](#4-api-routes)
+5. [Tailwind CSS 설정 및 사용법](#5-tailwind-css-설정-및-사용법)
+    - [1. Tailwind CSS 설정](#1-tailwind-css-설정)
+    - [2. Tailwind CSS 기본 사용법](#2-tailwind-css-기본-사용법)
+6. [폴더 구조 상세 설명](#6-폴더-구조-상세-설명)
+    - [1. 루트 디렉토리](#1-루트-디렉토리)
+    - [2. pages 폴더 구조](#2-pages-폴더-구조)
+    - [3. components 폴더 구조](#3-components-폴더-구조)
+    - [4. styles 폴더 구조](#4-styles-폴더-구조)
+    - [5. 기타 폴더 및 구조 요약](#5-기타-폴더-및-구조-요약)
 
 ---
 
 ## **1. Next.js란?**
-Next.js는 **React 기반의 풀스택 프레임워크**로, 서버사이드 렌더링(SSR), 정적 사이트 생성(SSG), Incremental Static Regeneration(ISR) 등의 다양한 렌더링 방식을 제공합니다. SEO 최적화와 성능 향상을 지원하며, 개발자가 복잡한 설정 없이 효율적으로 웹 애플리케이션을 개발할 수 있도록 돕습니다.
+
+Next.js는 **React 기반의 풀스택 프레임워크**로, 서버사이드 렌더링(SSR), 정적 사이트 생성(SSG), Incremental Static Regeneration(ISR) 등의 다양한 렌더링 방식을 제공합니다. SEO 최적화와 성능 향상을 지원하며, 복잡한 설정 없이 효율적으로 웹 애플리케이션을 개발할 수 있습니다.
 
 ---
 
@@ -59,25 +86,37 @@ my-next-app/
 ├── node_modules/
 ├── public/
 ├── pages/
-│   ├── api/
-│   │   └── hello.ts   # API 라우트
-│   ├── _app.tsx       # 공통 레이아웃
-│   ├── _document.tsx  # HTML 구조 수정
-│   ├── index.tsx      # 메인 페이지
-│   ├── about.tsx      # '/about' 페이지
-│   └── post/
-│       └── [id].tsx   # 동적 라우팅
-├── components/        # UI 컴포넌트
-├── styles/            # CSS 파일
-│   ├── globals.css    # 전역 스타일
-│   └── Home.module.css
-├── utils/             # 유틸리티 함수
-├── hooks/             # 커스텀 훅
-├── context/           # 전역 상태 관리
-├── tailwind.config.js # Tailwind 설정
-├── tsconfig.json      # TypeScript 설정
-└── package.json       # 프로젝트 설정
+├── styles/
+├── components/
+├── .next/
+├── utils/
+├── hooks/
+├── context/
+├── services/
+├── tailwind.config.js
+├── tsconfig.json
+├── next.config.js
+├── package.json
+└── README.md
 ```
+
+| 폴더/파일          | 설명                                                                                 |
+|--------------------|--------------------------------------------------------------------------------------|
+| **node_modules/**  | 프로젝트 의존성 패키지가 저장되는 폴더. 사용자가 직접 수정하지 않음.                   |
+| **public/**        | 정적 파일(이미지, 폰트, favicon 등)을 저장. 이 폴더 안의 파일은 `/` 경로로 접근 가능. |
+| **pages/**         | Next.js의 핵심 폴더로, 라우팅을 관리하며 SSR, SSG, API Routes 등을 구현.              |
+| **styles/**        | CSS 파일을 관리. Tailwind CSS 또는 CSS Modules를 사용할 때 사용.                     |
+| **components/**    | 재사용 가능한 React 컴포넌트를 저장. UI 요소를 모듈화하여 유지보수성 향상.           |
+| **.next/**         | Next.js가 빌드 과정에서 생성하는 캐시 폴더. 배포 및 서버에서 사용되며 직접 수정하지 않음.|
+| **utils/**         | 프로젝트 전반에서 사용되는 유틸리티 함수 저장.                                       |
+| **hooks/**         | 커스텀 React 훅을 저장.                                                              |
+| **context/**       | 전역 상태 관리 컨텍스트를 저장.                                                      |
+| **services/**      | API 호출 로직과 서비스 계층 로직을 저장.                                             |
+| **tailwind.config.js** | Tailwind CSS 설정 파일.                                                          |
+| **tsconfig.json**  | TypeScript 설정 파일.                                                               |
+| **next.config.js** | Next.js 설정 파일로, 이미지 최적화, 리다이렉션, 환경 변수 등을 설정.                  |
+| **package.json**   | 프로젝트의 의존성 및 실행 스크립트를 정의.                                           |
+| **README.md**      | 프로젝트 설명 문서.                                                                 |
 
 ---
 
@@ -91,6 +130,8 @@ export default function About() {
   return <h1>About Page</h1>;
 }
 ```
+
+---
 
 ### **2. 동적 라우팅**
 - 대괄호(`[]`)로 동적 URL 처리.
@@ -107,8 +148,8 @@ export async function getServerSideProps({ params }: any) {
 
 ---
 
-### **3. 데이터 페칭**
-#### (1) **SSG**: 정적 사이트 생성
+### **3. 데이터 페칭 (SSG, SSR, ISR)**
+#### **(1) SSG**
 ```typescript
 export async function getStaticProps() {
   return { props: { message: "Static Data" } };
@@ -119,14 +160,14 @@ export default function Home({ message }: { message: string }) {
 }
 ```
 
-#### (2) **SSR**: 서버사이드 렌더링
+#### **(2) SSR**
 ```typescript
 export async function getServerSideProps() {
   return { props: { message: "Server-Side Data" } };
 }
 ```
 
-#### (3) **ISR**: 점진적 정적 재생성
+#### **(3) ISR**
 ```typescript
 export async function getStaticProps() {
   return {
@@ -166,7 +207,9 @@ module.exports = {
 
 #### **2) `globals.css`에 Tailwind 지시문 추가**
 ```css
-@tailwind base;
+@tailwind base
+
+;
 @tailwind components;
 @tailwind utilities;
 ```
@@ -174,9 +217,7 @@ module.exports = {
 ---
 
 ### **2. Tailwind CSS 기본 사용법**
-
-#### **1) 유틸리티 클래스**
-- Tailwind는 사전 정의된 클래스를 조합하여 스타일을 적용.
+#### **(1) 유틸리티 클래스**
 ```typescript
 export default function Home() {
   return (
@@ -187,81 +228,30 @@ export default function Home() {
 }
 ```
 
-#### **2) 반응형 디자인**
-- `sm`, `md`, `lg`, `xl` 접두사를 사용.
+#### **(2) 반응형 디자인**
 ```html
 <div class="text-sm md:text-lg lg:text-xl">Responsive Text</div>
 ```
 
-#### **3) 상태 스타일링**
-- Hover, Focus, Active 상태 스타일.
+#### **(3) 상태 스타일링**
 ```html
 <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
   Hover Me
 </button>
 ```
 
-#### **4) 다크 모드**
-- 다크 모드를 위한 `dark` 클래스 지원.
-```html
-<div class="bg-white dark:bg-black text-black dark:text-white">Dark Mode</div>
-```
+---
+
+```markdown
+---
+
+## **6. 폴더 구조 상세 설명**
+
+Next.js 프로젝트는 다양한 기능을 효율적으로 구현하기 위해 체계적으로 폴더를 구성합니다. 아래는 각 폴더와 파일의 역할을 자세히 설명합니다.
 
 ---
 
-### **3. Tailwind CSS + TypeScript 예제**
-
-#### **1) 프로젝트 파일 구조**
-```bash
-my-next-app/
-├── components/
-│   └── Button.tsx      # 재사용 가능한 버튼 컴포넌트
-├── pages/
-│   └── index.tsx       # 메인 페이지
-├── styles/
-│   └── globals.css     # 전역 스타일
-└── tailwind.config.js  # Tailwind 설정
-```
-
-#### **2) Button 컴포넌트**
-```typescript
-// components/Button.tsx
-interface ButtonProps {
-  label: string;
-  onClick: () => void;
-}
-
-export default function Button({ label, onClick }: ButtonProps) {
-  return (
-    <button
-      onClick={onClick}
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-    >
-      {label}
-    </button>
-  );
-}
-```
-
-#### **3) 메인 페이지**
-```typescript
-// pages/index.tsx
-import Button from "../components/Button";
-
-export default function Home() {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <h1 className="text-4xl font-bold text-blue-600 mb-4">Welcome to Next.js + Tailwind</h1>
-      <Button label="Click Me" onClick={() => alert("Button Clicked!")} />
-    </div>
-  );
-}
-```
-
----
-
-### **4.폴더 구조**
-
+### **1. 루트 디렉토리**
 
 ```bash
 my-next-app/
@@ -302,7 +292,7 @@ my-next-app/
 
 ---
 
-### **5. pages/** 폴더 구조
+### **2. pages 폴더 구조**
 
 `pages/` 폴더는 Next.js의 가장 중요한 폴더로, 모든 페이지와 API 라우트가 여기서 정의됩니다.
 
@@ -330,7 +320,9 @@ pages/
 
 ---
 
-### **6. components/** 폴더 구조
+### **3. components 폴더 구조**
+
+컴포넌트는 재사용성을 높이고 UI 코드를 모듈화하기 위해 분리됩니다.
 
 ```bash
 components/
@@ -357,7 +349,7 @@ components/
 
 ---
 
-### **7. styles/** 폴더 구조
+### **4. styles 폴더 구조**
 
 ```bash
 styles/
@@ -374,7 +366,8 @@ styles/
 
 ---
 
-### **8. 기타 폴더**
+### **5. 기타 폴더 및 구조 요약**
+
 - **utils/**: 공통으로 사용하는 유틸리티 함수 저장.
 - **hooks/**: 커스텀 React 훅 저장.
 - **context/**: 전역 상태 관리를 위한 Context API 파일 저장.
@@ -382,7 +375,7 @@ styles/
 
 ---
 
-### **9.폴더 구조 요약**
+### **폴더 구조 요약**
 1. **pages/**: 라우팅과 SSR/SSG/API Routes 관리.
 2. **components/**: UI와 레이아웃 컴포넌트 관리.
 3. **styles/**: CSS 파일 관리.
@@ -390,6 +383,5 @@ styles/
 5. **hooks/**: 커스텀 훅 관리.
 6. **context/**: 전역 상태 관리.
 7. **services/**: API 호출 및 서비스 로직 관리.
-
-
+```
 ```
