@@ -1,4 +1,3 @@
-```markdown
 # **Next.js + TypeScript + Tailwind CSS Guide**
 
 ---
@@ -6,26 +5,26 @@
 ## **목차**
 1. [Next.js란?](#1-nextjs란)
 2. [Next.js + TypeScript + Tailwind CSS 사용 이유](#2-nextjs--typescript--tailwind-css-사용-이유)
-    - [1. Next.js의 주요 장점](#1-nextjs의-주요-장점)
-    - [2. TypeScript 사용 이유](#2-typescript-사용-이유)
-    - [3. Tailwind CSS 사용 이유](#3-tailwind-css-사용-이유)
+    - [Next.js의 주요 장점](#nextjs의-주요-장점)
+    - [TypeScript 사용 이유](#typescript-사용-이유)
+    - [Tailwind CSS 사용 이유](#tailwind-css-사용-이유)
 3. [Next.js 설치 및 폴더 구조](#3-nextjs-설치-및-폴더-구조)
-    - [1. Next.js + TypeScript + Tailwind 설치](#1-nextjs--typescript--tailwind-설치)
-    - [2. Next.js 폴더 구조](#2-nextjs-폴더-구조)
+    - [Next.js + TypeScript + Tailwind 설치](#nextjs--typescript--tailwind-설치)
+    - [Next.js 폴더 구조](#nextjs-폴더-구조)
 4. [Next.js + TypeScript 주요 기능](#4-nextjs--typescript-주요-기능)
-    - [1. 파일 기반 라우팅](#1-파일-기반-라우팅)
-    - [2. 동적 라우팅](#2-동적-라우팅)
-    - [3. 데이터 페칭 (SSG, SSR, ISR)](#3-데이터-페칭-ssg-ssr-isr)
-    - [4. API Routes](#4-api-routes)
+    - [파일 기반 라우팅](#파일-기반-라우팅)
+    - [동적 라우팅](#동적-라우팅)
+    - [데이터 페칭 (SSG, SSR, ISR)](#데이터-페칭-ssg-ssr-isr)
+    - [API Routes](#api-routes)
 5. [Tailwind CSS 설정 및 사용법](#5-tailwind-css-설정-및-사용법)
-    - [1. Tailwind CSS 설정](#1-tailwind-css-설정)
-    - [2. Tailwind CSS 기본 사용법](#2-tailwind-css-기본-사용법)
+    - [Tailwind CSS 설정](#tailwind-css-설정)
+    - [Tailwind CSS 기본 사용법](#tailwind-css-기본-사용법)
 6. [폴더 구조 상세 설명](#6-폴더-구조-상세-설명)
-    - [1. 루트 디렉토리](#1-루트-디렉토리)
-    - [2. pages 폴더 구조](#2-pages-폴더-구조)
-    - [3. components 폴더 구조](#3-components-폴더-구조)
-    - [4. styles 폴더 구조](#4-styles-폴더-구조)
-    - [5. 기타 폴더 및 구조 요약](#5-기타-폴더-및-구조-요약)
+    - [루트 디렉토리](#루트-디렉토리)
+    - [pages 폴더 구조](#pages-폴더-구조)
+    - [components 폴더 구조](#components-폴더-구조)
+    - [styles 폴더 구조](#styles-폴더-구조)
+    - [기타 폴더 및 구조 요약](#기타-폴더-및-구조-요약)
 
 ---
 
@@ -37,7 +36,7 @@ Next.js는 **React 기반의 풀스택 프레임워크**로, 서버사이드 렌
 
 ## **2. Next.js + TypeScript + Tailwind CSS 사용 이유**
 
-### **1. Next.js의 주요 장점**
+### **Next.js의 주요 장점**
 - **파일 기반 라우팅**: 폴더 구조에 따라 URL이 자동으로 생성.
 - **SSR/SSG 지원**: 페이지 요청 시 서버에서 HTML을 생성하거나, 사전에 정적 HTML 생성.
 - **API Routes**: 백엔드와의 통합이 쉬움.
@@ -46,14 +45,14 @@ Next.js는 **React 기반의 풀스택 프레임워크**로, 서버사이드 렌
 
 ---
 
-### **2. TypeScript 사용 이유**
+### **TypeScript 사용 이유**
 - **타입 안전성 제공**: 런타임 오류를 줄이고 코드의 가독성과 유지보수성을 높임.
 - **IDE 지원 강화**: 자동완성, 타입 추론, 실시간 오류 감지.
 - **대규모 프로젝트에 적합**: 코드의 일관성과 안정성을 유지.
 
 ---
 
-### **3. Tailwind CSS 사용 이유**
+### **Tailwind CSS 사용 이유**
 - **유틸리티 클래스 기반**: HTML 내에서 CSS를 바로 작성 가능.
 - **빠른 스타일링**: 사전 정의된 클래스만으로 복잡한 UI 생성.
 - **반응형 디자인 간편**: `sm`, `md`, `lg` 등의 접두사를 사용해 다양한 화면 크기 대응.
@@ -63,14 +62,14 @@ Next.js는 **React 기반의 풀스택 프레임워크**로, 서버사이드 렌
 
 ## **3. Next.js 설치 및 폴더 구조**
 
-### **1. Next.js + TypeScript + Tailwind 설치**
+### **Next.js + TypeScript + Tailwind 설치**
 
-#### **1) Next.js + TypeScript 설치**
+#### Next.js + TypeScript 설치
 ```bash
 npx create-next-app@latest my-next-app --typescript
 cd my-next-app
 npm run dev
-```
+
 
 #### **2) Tailwind CSS 설치**
 ```bash
