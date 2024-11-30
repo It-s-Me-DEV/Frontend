@@ -27,7 +27,8 @@
 
 Next.js는 React를 기반으로 한 웹 프레임워크로, 다음과 같은 기능을 제공합니다:
 
-![image](https://github.com/user-attachments/assets/8f5b8005-365a-4fb7-a62b-d44f6e31a7ad)
+![image](https://github.com/user-attachments/assets/c4c3c3ae-cba6-400a-b301-c73acbef5385)
+
 
 
 
