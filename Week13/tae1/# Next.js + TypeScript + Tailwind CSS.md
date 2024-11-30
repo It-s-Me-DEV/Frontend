@@ -145,6 +145,8 @@ my-next-app/
 
 #### **`src/`**
 소스 코드를 저장하는 루트 폴더로, 일반적으로 **`components/`**, **`pages/`**, **`styles/`** 폴더를 포함합니다.
+
+
 ![image](https://github.com/user-attachments/assets/5506c22e-5b32-467a-83d1-869a554165da)
 
 
@@ -156,16 +158,16 @@ my-next-app/
 - 재사용 가능한 UI 컴포넌트를 저장하는 폴더입니다.
 - **예:**  
   - **`Header.tsx`**: 헤더 UI 컴포넌트
-  - 
-  - ![image](https://github.com/user-attachments/assets/9510b6b1-a8f5-4487-8295-9f3fa45ed27e)
+    
+   ![image](https://github.com/user-attachments/assets/9510b6b1-a8f5-4487-8295-9f3fa45ed27e)
 
   - **`Footer.tsx`**: 푸터 UI 컴포넌트
-  - 
-  - ![image](https://github.com/user-attachments/assets/286f3835-2484-4ac6-8489-1a80a9bb8fb9)
+    
+   ![image](https://github.com/user-attachments/assets/286f3835-2484-4ac6-8489-1a80a9bb8fb9)
 
 - **Tip:** 컴포넌트를 파일 단위로 분리하면 유지보수가 용이합니다.
 
-- 
+  
 ![image](https://github.com/user-attachments/assets/a949736e-3d90-4b44-86d7-a6d01cf3d6b4)
 
 ![image](https://github.com/user-attachments/assets/52c96f15-c13a-4d79-99d0-26574e8a0d85)
