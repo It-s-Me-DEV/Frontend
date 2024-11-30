@@ -147,16 +147,6 @@ my-next-app/
 소스 코드를 저장하는 루트 폴더로, 일반적으로 **`components/`**, **`pages/`**, **`styles/`** 폴더를 포함합니다.
 
 
-
-
-
-
-
-![image](https://github.com/user-attachments/assets/5506c22e-5b32-467a-83d1-869a554165da)
-
-
-
-
 ---
 
 ##### **`src/components/`**
@@ -169,6 +159,11 @@ my-next-app/
   - **`Footer.tsx`**: 푸터 UI 컴포넌트
     
     ![image](https://github.com/user-attachments/assets/10ea99d2-922b-49fb-a353-7070e600d8ee)
+
+   -**'side.tsx'**: 사이드 UI 컴포넌트
+
+      ![image](https://github.com/user-attachments/assets/88f73aea-ba4f-4219-9cc1-9229d06b7333)
+
     
 - **Tip:** 컴포넌트를 파일 단위로 분리하면 유지보수가 용이합니다.
 
@@ -187,6 +182,13 @@ my-next-app/
 ---
 
 ##### **`src/pages/`**
+
+![image](https://github.com/user-attachments/assets/4dedb287-bcb4-4b7d-bb5b-f6ee2a622f23)
+-src/pages/home
+
+![image](https://github.com/user-attachments/assets/3687ccad-13a2-45ad-a605-379645069955)
+-src/pgaes/artist/GD
+
 - 페이지와 라우팅을 관리하는 폴더입니다.
 - 각 파일은 자동으로 라우팅됩니다.  
   **예:**
