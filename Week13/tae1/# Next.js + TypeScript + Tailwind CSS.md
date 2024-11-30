@@ -1,4 +1,4 @@
-```markdown
+
 # Next.js + TypeScript + Tailwind CSS 프로젝트 가이드
 
 이 문서는 Next.js를 사용하여 TypeScript와 Tailwind CSS를 함께 활용하는 방법에 대해 다룹니다. Next.js 프로젝트 설정과 디렉토리 구조에 대해 자세히 설명합니다.
