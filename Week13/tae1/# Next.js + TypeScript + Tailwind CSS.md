@@ -147,6 +147,11 @@ my-next-app/
 소스 코드를 저장하는 루트 폴더로, 일반적으로 **`components/`**, **`pages/`**, **`styles/`** 폴더를 포함합니다.
 
 
+
+
+
+
+
 ![image](https://github.com/user-attachments/assets/5506c22e-5b32-467a-83d1-869a554165da)
 
 
