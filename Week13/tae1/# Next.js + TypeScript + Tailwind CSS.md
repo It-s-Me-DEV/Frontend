@@ -27,9 +27,13 @@
 
 Next.js는 React를 기반으로 한 웹 프레임워크로, 다음과 같은 기능을 제공합니다:
 
+![image](https://github.com/user-attachments/assets/658f3773-a184-41fa-90a7-c6ce1fbf08a0)
+
+
 - **서버사이드 렌더링 (SSR)**: 각 요청마다 서버에서 HTML을 생성합니다.
 - **정적 사이트 생성 (SSG)**: 빌드 시 HTML을 생성하여 정적 파일로 배포합니다.
 - **SEO 최적화**: SSR과 SSG를 통해 검색 엔진 친화적인 페이지를 제공합니다.
+
 
 ### Server-side Rendering (SSR)
 - 요청 시 데이터를 서버에서 가져와 HTML을 생성합니다.
