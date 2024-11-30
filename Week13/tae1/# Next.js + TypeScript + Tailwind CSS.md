@@ -155,7 +155,7 @@ my-next-app/
 ![image](https://github.com/user-attachments/assets/5506c22e-5b32-467a-83d1-869a554165da)
 
 
-![image](https://github.com/user-attachments/assets/10ea99d2-922b-49fb-a353-7070e600d8ee)
+
 
 ---
 
@@ -164,15 +164,17 @@ my-next-app/
 - **예:**  
   - **`Header.tsx`**: 헤더 UI 컴포넌트
     
-   ![image](https://github.com/user-attachments/assets/9510b6b1-a8f5-4487-8295-9f3fa45ed27e)
+![image](https://github.com/user-attachments/assets/5506c22e-5b32-467a-83d1-869a554165da)
 
   - **`Footer.tsx`**: 푸터 UI 컴포넌트
     
-   ![image](https://github.com/user-attachments/assets/286f3835-2484-4ac6-8489-1a80a9bb8fb9)
-
+    ![image](https://github.com/user-attachments/assets/10ea99d2-922b-49fb-a353-7070e600d8ee)
+    
 - **Tip:** 컴포넌트를 파일 단위로 분리하면 유지보수가 용이합니다.
 
-  
+![image](https://github.com/user-attachments/assets/5426b839-1123-43b2-8308-48542249783f)
+
+
 ![image](https://github.com/user-attachments/assets/a949736e-3d90-4b44-86d7-a6d01cf3d6b4)
 
 ![image](https://github.com/user-attachments/assets/52c96f15-c13a-4d79-99d0-26574e8a0d85)
