@@ -15,7 +15,7 @@
 
 export async function getServerSideProps() {
   const res = await fetch('https://jsonplaceholder.typicode.com/posts'); //fetch를 사용해 데이터 가져옴
-  const posts = await res.json(); //텍스트 형식의 JSON 데이터를 JavaScript 객체로 변환
+  const posts = await res.json(); //텍스트 형식의 JSON 데이터를 JavaScript 객체로 변환-> 데이터 조작 가능
 
   return { props: { posts } }; //데이터 전달
 }
