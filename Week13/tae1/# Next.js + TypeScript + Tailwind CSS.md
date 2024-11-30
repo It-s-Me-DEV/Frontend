@@ -162,7 +162,7 @@ my-next-app/
 
    -**'side.tsx'**: 사이드 UI 컴포넌트
 
-      ![image](https://github.com/user-attachments/assets/88f73aea-ba4f-4219-9cc1-9229d06b7333)
+ ![image](https://github.com/user-attachments/assets/88f73aea-ba4f-4219-9cc1-9229d06b7333)
 
     
 - **Tip:** 컴포넌트를 파일 단위로 분리하면 유지보수가 용이합니다.
